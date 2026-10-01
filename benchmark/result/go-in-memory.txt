@@ -1,0 +1,44 @@
+  █ THRESHOLDS 
+
+    checks{phase:read}
+    ✓ 'rate>0.99' rate=100.00%
+
+    http_req_duration{phase:read}
+    ✓ 'p(95)<10' p(95)=2.57ms
+    ✓ 'p(99)<25' p(99)=4.12ms
+
+    http_req_failed{phase:read}
+    ✓ 'rate<0.01' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 77152   1542.027996/s
+    checks_succeeded...: 100.00% 77152 out of 77152
+    checks_failed......: 0.00%   0 out of 77152
+
+    ✓ statut 307
+
+    HTTP
+    http_req_duration..............: avg=1.31ms  min=432.11µs med=1.12ms max=19.28ms  p(90)=2.04ms  p(95)=2.57ms
+      { expected_response:true }...: avg=1.31ms  min=432.11µs med=1.12ms max=19.28ms  p(90)=2.04ms  p(95)=2.57ms
+      { phase:read }...............: avg=1.31ms  min=432.11µs med=1.12ms max=19.28ms  p(90)=2.04ms  p(95)=2.57ms
+    http_req_failed................: 0.00%  0 out of 77157
+      { phase:read }...............: 0.00%  0 out of 77152
+    http_reqs......................: 77157  1542.127931/s
+
+    EXECUTION
+    iteration_duration.............: avg=51.74ms min=50.51ms  med=51.6ms max=100.66ms p(90)=52.48ms p(95)=53ms  
+    iterations.....................: 77152  1542.027996/s
+    vus............................: 2      min=2          max=149
+    vus_max........................: 150    min=150        max=150
+
+    NETWORK
+    data_received..................: 20 MB  391 kB/s
+    data_sent......................: 6.9 MB 137 kB/s
+
+
+
+
+running (0m50.0s), 000/150 VUs, 77152 complete and 0 interrupted iterations
+default ✓ [ 100% ] 000/150 VUs  50s
