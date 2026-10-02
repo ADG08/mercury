@@ -27,6 +27,6 @@ Sc√©nario : `read-heavy.js` (150 VUs max, 50s, 5 codes distincts avec popularit√
 | Java (In-Memory) | - | - | - | - | - |
 | Java (PostgreSQL) | - | - | - | - | - |
 | Java (Redis Cache) | - | - | - | - | - |
-| Python (In-Memory)| - | - | - | - | - |
+| Python (In-Memory) | 1 295,2 | 11,13 ms | 30,83 ms | 71,08 ms | 0,00 % |
 | Python (PostgreSQL)| - | - | - | - | - |
 | Python (Redis Cache)| - | - | - | - | - |
